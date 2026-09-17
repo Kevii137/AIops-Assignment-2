@@ -1,0 +1,18 @@
+services:
+  api:
+    build:
+      context: ../spam_api
+      dockerfile: Dockerfile.multistage
+    ports:
+      - "8000:8000"
+    environment:
+      REDIS_HOST: cache
+      REDIS_PORT: "6379"
+      CACHE_TTL_SECONDS: "60"
+    depends_on:
+      - cache
+
+  cache:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
