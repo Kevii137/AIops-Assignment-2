@@ -1,0 +1,11 @@
+.claude/
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+evidence/**/*.tmp
+walkthrough/
+Assignment 2.pdf
+writeup/
