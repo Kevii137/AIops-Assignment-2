@@ -1,10 +1,3 @@
-# Q3 -- Kubernetes Indexed Job: parallel shard validation.
-#
-# Parallelism justification: the target cluster has 2 nodes x 2 allocatable CPUs = 4 CPUs
-# total. Each pod requests/limits exactly 1 CPU, so at most 4 pods can be Running
-# concurrently without any pod sitting Pending for lack of CPU. completions=8 (one pod
-# per shard) with parallelism=4 means all 8 shards are validated in two waves of 4
-# genuinely concurrent pods, using the full cluster CPU budget without oversubscribing it.
 apiVersion: batch/v1
 kind: Job
 metadata:

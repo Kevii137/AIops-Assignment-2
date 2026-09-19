@@ -1,4 +1,4 @@
-# --- Stage 1: build a venv with all dependencies ---
+# --- Stage 1: build ---
 FROM python:3.11 AS builder
 
 WORKDIR /app

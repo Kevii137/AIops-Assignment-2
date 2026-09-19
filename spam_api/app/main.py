@@ -1,12 +1,3 @@
-"""
-main.py -- AIOps Module 3 Assignment, spam-detection API.
-FastAPI service exposing POST /predict and GET /healthz.
-
-If REDIS_HOST is set, /predict caches predictions in Redis keyed by the exact input
-text (Question 2). If it is unset -- e.g. when this image runs standalone for
-Question 1 or behind a Deployment with no cache sidecar in Question 4 -- caching is
-skipped entirely and behavior is identical to a plain, uncached predictor.
-"""
 import hashlib
 import os
 
