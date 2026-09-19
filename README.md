@@ -1,7 +1,6 @@
 # AIOps Module 3 Assignment
 
-Full write-up (2 pages): [`writeup/writeup.pdf`](writeup/writeup.pdf). Screenshots backing every
-claim in the write-up are under `evidence/<qN>/`.
+Full write-up (2 pages): [`writeup.pdf`](writeup/writeup.pdf). Screenshots backing evidences asked for are in `evidence/<qN>/`.
 
 ## Layout
 
